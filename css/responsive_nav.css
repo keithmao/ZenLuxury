@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;700&display=");
  
 
-/* remove any default padding and margin setting in the browser*/
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+/*# responsive nav bar */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Set body setting */
 
-body{
-    background-color: #353836;
-    color: white;
-    font-family: "Poppins", sans-serif;
+body {
+  background-color: #353836;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 /* remove any text-decoration from our links in the header */
 header a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 header {
   padding: 0 20px;
@@ -38,7 +38,7 @@ header {
 }
 
 #brand a {
-  color: #09c372;
+  color: #c01dad;
 }
 
 ul {
@@ -72,7 +72,7 @@ ul li:hover {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -119,4 +119,12 @@ ul li:hover {
   #hamburger-icon {
     display: block;
   }
+}
+
+.brand {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
 }

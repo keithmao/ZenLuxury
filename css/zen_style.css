@@ -72,7 +72,7 @@ body {
   align-items: center;
 }
 .tapp-nav {
-  overflow: hidden;
+  overflow: visible;
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   padding: 0 24px;
@@ -436,4 +436,7 @@ body {
   #tapp-nav tapp-nav-modern tapp-nav-dark .toggle:active {
     opacity: 0.5;
   }
+}
+.brand {
+    
 }
