@@ -409,6 +409,7 @@ body {
     width: 60px;
     height: 44px;
     opacity: 0.25;
+      
   }
   #tapp-nav tapp-nav-modern tapp-nav-dark .toggle:before {
     -moz-osx-font-smoothing: grayscale;

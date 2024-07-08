@@ -337,90 +337,40 @@
   </div>
   <div class="tapp-section" style="--tapp-section-background: #989c88; --tapp-section-text: var(--tapp-theme-primary, #FFFFFF); background-color: rgb(152, 156, 136); color: var(--tapp-theme-primary, #FFFFFF);">
     <div class="tapp-section-content" style="max-width: 1264px; padding-top: 72px; padding-bottom: 72px;">
-      <div class="container-fluid">
-        <div class="container">
+      <div class="tapp-module tapp-module-root">
+        <div class="tapp-module tapp-module-base-horizontal tapp-module-align-flex-start">
+          <div class="tapp-module tapp-module-vertical" style="flex: 100;">
             <div class="tapp-text-wrapper" style="color: rgb(52, 48, 48); text-align: center; font-family: var(--tapp-theme-font);">
               <h2 class="tapp-block-text-h2"><span class="tapp-block-text-leaf"><strong>Payment and Cancellation Policy</strong></span></h2>
             </div>
             <div class="tapp-spacer" style="height: 16px;">&nbsp;</div>
-          <div id="accordion1" role="tablist">
-            <div class="card">
-              <div class="card-header" role="tab" id="headingOne1">
-                <h5 class="mb-0"> <a data-toggle="collapse" href="#collapseOne1" role="button" aria-expanded="true" aria-controls="collapseOne1" style="color: black"> Booking </a></h5>
-              </div>
-              <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordion1">
-                <div class="card-body">
-                  <ol>
-                    <li>
-                      <h7>We provide our services within Singapore only.</h7>
-                    </li>
-                    <li>
-                      <h7>Please arrange your appointment at least 1 hour in advance.</h7>
-                    </li>
-                    <li>
-                      <h7>Once we receive your confirmation, we will arrange the masseuse to your home or hotel within 20-30 minutes.</h7>
-                    </li>
-                    <li>
-                      <h7>You can place your booking through our WhatsApp chat, and our support team will verify the booking details with you.</h7>
-                    </li>
-                  </ol>
-                  <div class="whatsapp-chat"> <a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/message/DCZL7GX7P53CI1?autoload=1&app_absent=0&text=I%27m%20inquiring%20about%20the%20apartment%20listing"> <img src="images/whatsapp_button/WhatsAppButtonGreenSmall.png" alt="Chat on WhatsApp" width="150" height="35" /></a> </div>
-                </div>
-              </div>
+            <div class="tapp-text-wrapper" style="color: rgb(0, 0, 0); text-align: left; font-family: var(--tapp-theme-font);">
+              <h3 class="tapp-block-text-h3"><span class="tapp-block-text-leaf"><strong>PAYMENT OPTIONS</strong></span></h3>
             </div>
-            <div class="card">
-              <div class="card-header" role="tab" id="headingTwo1">
-                <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseTwo1" role="button" aria-expanded="false" aria-controls="collapseTwo1" style="color: black"> Cancellation Policy </a></h5>
-              </div>
-              <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
-                <div class="card-body">
-                  <ol>
-                    <li>
-                      <h7>There will be a cancellation fee of $100 or 50% of the package cost, whichever is higher, if you cancel the appointment less than 45 minutes in advance.</h7>
-                    </li>
-                  </ol>
-                </div>
-              </div>
+            <div class="tapp-text-wrapper" style="color: rgb(0, 0, 0); text-align: left; font-family: Poppins;">
+              <p class="tapp-block-text-p"><span class="tapp-block-text-leaf">We accept below payment mode :</span></p>
+              <ul class="tapp-block-text-ul">
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">Singapore PayNow</span></li>
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">Fund transfer</span></li>
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">Cash (other currencies are accepted based on the current exchange rates of the day)</span></li>
+              </ul>
             </div>
-            <div class="card">
-              <div class="card">
-                <div class="card-header" role="tab" id="headingThree1">
-                  <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseThree1" style="color: black"> Q&amp;A </a></h5>
-                </div>
-              </div>
-              <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingThree1" data-parent="#accordion1">
-                <div class="card-body">
-                  <section class="questionaire">
-                    <h5>Q.&nbsp; Are there any hidden or transportation charges?</h5>
-                    <div class="row-answer">
-                      <h7>There are no hidden charge, and transportation charge is included in the package. all costs are clearly listed.</h7>
-                    </div>
-                    <hr>
-                    <h5>Q.&nbsp; Could we possibly extend the massage session by another 30 minutes?</h5>
-                    <div class="row-answer">
-                      <h7>Please feel free to inquire about availability for a subsequent slot, or alternatively, you can schedule another appointment with us and specify your preferences.</h7>
-                    </div>
-                    <hr>
-                    <h5>Q.&nbsp; I didn't realize the masseuse had arrived, and she has already left. Can I schedule another appointment?</h5>
-                    <div class="row-answer">
-                      <h7>Certainly, you can check with us the next availability slot. However, Please note that advance payment is required.<br>
-                        We have a 15-minute waiting period. Once our masseuse arrive the provided address and if we do not hear from you, the booking will be cancelled.</h7>
-                    </div>
-                    <hr>
-                  </section>
-                  <!-- body code goes here -->
-                  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                  <script src="js/jquery-3.4.1.min.js"></script>
-                  <!-- Include all compiled plugins (below), or include individual files as needed -->
-                  <script src="js/popper.min.js"></script>
-                  <script src="js/bootstrap-4.4.1.js"></script>
-                </div>
-              </div>
+            <div class="tapp-text-wrapper" style="color: rgb(0, 0, 0); text-align: left; font-family: var(--tapp-theme-font);">
+              <h3 class="tapp-block-text-h3"><span class="tapp-block-text-leaf"><strong>BOOKING &amp; CANCELLATION POLICIES</strong></span></h3>
+            </div>
+            <div class="tapp-text-wrapper" style="color: rgb(0, 0, 0); text-align: left; font-family: var(--tapp-theme-font);">
+              <ul class="tapp-block-text-ul">
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">We provide our services within Singapore only.</span></li>
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">Please arrange your appointment at least 1 hour in advance.</span></li>
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">Once we receive your confirmation, we will arrange masseuse to your home or hotel within 20-30 minutes.</span></li>
+                <li class="tapp-block-text-li"><span class="tapp-block-text-leaf">there will be cancellation cost $100 or 50% of the package cost you order whichever higher, If cancel the appointment less than 45 mins in advance.</span></li>
+              </ul>
+              <p class="tapp-block-text-p"><span class="tapp-block-text-leaf"></span></p>
             </div>
           </div>
         </div>
       </div>
-</div>
+    </div>
   </div>
   <div class="tapp-section" style="--tapp-section-background: #323128; --tapp-section-text: #e3e2dc; background-color: rgb(50, 49, 40); color: rgb(227, 226, 220);">
     <div class="tapp-section-content" style="max-width: 1072px; padding-top: 168px; padding-bottom: 168px;">

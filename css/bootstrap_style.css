@@ -122,8 +122,11 @@ address {
 ol,
 ul,
 dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inherit;
+    margin-right: 0;
+    margin-left: 50px;
 }
 
 ol ol,
@@ -5057,17 +5060,17 @@ input[type="button"].btn-block {
 }
 
 .card {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #FFFFFF;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
 }
 
 .card > hr {
@@ -5090,6 +5093,8 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+    color: black;
+    font-size: 0.9em;
 }
 
 .card-title {
@@ -5116,7 +5121,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #7D816C;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -5130,7 +5135,7 @@ input[type="button"].btn-block {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: ;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -10766,5 +10771,48 @@ ul li:hover {
   }
 }
 
+
+.answer {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.whatsapp {
+    text-decoration-style: none;
+    
+}
+.whatsapp-chat {
+    margin-top: 5px; 
+    margin-left: 50px;
+}
+
+.card-body ol li h7 {
+    font-size: 0.95em;
+    padding-right: 20px;
+    color: #000000;
+}
+
+.card-body ol li {
+    padding-right: 50px;
+    padding: 0 0 10px 10px;
+    line-height: 20px;
+}
+
+.questionaire {
+    margin: 10px 80px 10px 20px;
+    padding-left: 20px;
+}
+.questionaire h5{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.questionaire hr {
+    margin: 30px;
+}
+
+.row-answer {
+    font-size: 0.9em;
+}
 
 
