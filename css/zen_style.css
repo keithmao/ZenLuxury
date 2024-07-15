@@ -81,10 +81,8 @@ body {
   justify-content: center;
 }
 .tapp-nav-content-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: var(--tapp-theme-font);
 }
 /* Navigation Positions */
