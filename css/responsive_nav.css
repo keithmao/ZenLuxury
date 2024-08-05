@@ -123,7 +123,7 @@ ul li:hover {
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   header nav {
     display: none;
   }
@@ -134,8 +134,11 @@ ul li:hover {
 }
 
 .brand {
+    display:flex;
+    align-content: space-between;
+      flex-wrap: wrap;
     text-decoration: none;
-    margin: 0 10px;
+    margin: auto;
     color: white;
     font-size: 1.25em;
     font-weight: 600;
