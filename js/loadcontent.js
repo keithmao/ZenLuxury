@@ -1,36 +1,3 @@
-
-let timeout;
-
-const handleSubmit = (event) => {
-  event.preventDefault();
-
-  if (timeout) return;
-
-  const formData = new FormData(event.target);
-  console.log(event.target, formData)
-  const formDataArr = [...formData.entries()];
-  const reqData = {id: "a772065e-ea4a-4e7c-965a-2f8de95a0215", data: {}};
-  for (let i = 0; i < formDataArr.length; i++) {
-      const field = formDataArr[i];
-      reqData.data[field[0]] = field[1];
-  }
-  fetch("https://api.usestyle.ai/api/v2/send-email", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(reqData)
-  })
-    .then(response => response.json())
-    .then(response => {
-      console.log(response);
-      const notification = document.getElementById("snackbar");
-      notification.classList.add("show");
-      clearTimeout(timeout);
-      timeout = setTimeout(() => notification.classList.remove("show"), 5000);
-    })
-}
-
 function isFullyOutViewport(el, offset = 64) {
     const rect = el.getBoundingClientRect();
     return (
@@ -39,11 +6,6 @@ function isFullyOutViewport(el, offset = 64) {
     );
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  for (const form of document.forms) {
-    form.addEventListener("submit", handleSubmit);
-  }
-})
 
 function isInViewport(el, offset = 64) {
     const rect = el.getBoundingClientRect();
@@ -59,13 +21,13 @@ function scrollHandler() {
     for (let i = 0; i < elements.length; i++) {
         if (isInViewport(elements[i])) {
             const rect = elements[i].getBoundingClientRect();
-            elements[i].classList.add('in-view');
+            elements[i].classList.add('in-view'); // Adds class if element is in view
         } else if (isFullyOutViewport(elements[i])) {
-            elements[i].classList.remove('in-view');
+            elements[i].classList.remove('in-view'); // Removes class if element is out of view
         }
     }
 }
 
-const throttledScrollHandler = _.throttle(scrollHandler, 99);
-window.addEventListener('scroll', throttledScrollHandler);
-document.addEventListener('DOMContentLoaded', () => {scrollHandler();});
+const throttledScrollHandler = _.throttle(scrollHandler, 99); // Throttles the scroll handler
+window.addEventListener('scroll', throttledScrollHandler); // Attaches scroll handler
+document.addEventListener('DOMContentLoaded', () => {scrollHandler();}); // Initial call to scroll handler

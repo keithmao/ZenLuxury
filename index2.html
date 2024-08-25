@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/headerscript.js"></script>
 <link rel="stylesheet" href="css/bootstrap_style.css">
 <link rel="stylesheet" href="css/zen_style.css">
 <link rel="stylesheet" href="css/responsive_nav.css">
-<script src="js/loadcontent.js"></script>
-<script src="js/index.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-    
+<link rel="stylesheet" href="css/popup_contact_styles.css">
+<script src="js/popper.min.js"></script> 
+<script src="js/headerscript.js"></script> 
+<script src="js/loadcontent.js"></script> 
+<script src="js/lucide.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>    
 <title>Home | ZEN LUXURY MASSAGE</title>
 </head>
 <body>
@@ -437,6 +438,18 @@
     </div>
 </div>
 </div>
+<!-- modify this form HTML and place wherever you want your form -->
+<form id="my-form" action="https://formspree.io/f/xpwarbyw" method="POST">
+  <label>Email:</label>
+  <input type="email" name="email" />
+  <label>Message:</label>
+  <input type="text" name="message" />
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
+</form>
+
+
+
   <div class="tapp-section" style="--tapp-section-background: #323128; --tapp-section-text: #e3e2dc; background-color: rgb(50, 49, 40); color: rgb(227, 226, 220);">
 <div class="tapp-section-content" style="max-width: 1072px; padding-top: 168px; padding-bottom: 168px;">
     <div class="tapp-module tapp-module-root">
@@ -446,7 +459,7 @@
               <h2 class="tapp-block-text-h2"><span class="tapp-block-text-leaf"><strong>Contact us today.</strong></span></h2>
             </div>
             <div class="tapp-spacer" style="height: 16px;">&nbsp;</div>
-            <form class="tapp-form tapp-form-background" style="background-color: rgb(250, 252, 252); color: rgb(74, 173, 173); --input-background-color: #4aadad; --input-border-color: rgba(74, 173, 173, 0.75); --input-outline-color: rgba(74, 173, 173, 0.25);">
+          <form method="post" action="" name="contact-form" class="tapp-form tapp-form-background" style="background-color: rgb(250, 252, 252); color: rgb(74, 173, 173); --input-background-color: #4aadad; --input-border-color: rgba(74, 173, 173, 0.75); --input-outline-color: rgba(74, 173, 173, 0.25);">
               <div class="tapp-form-row">
                 <div class="tapp-form-input-wrapper">
                   <input class="tapp-form-input" placeholder="First Name" type="text" required="" name="First Name">
@@ -466,14 +479,50 @@
               <div class="tapp-form-input-wrapper">
                 <textarea class="tapp-form-textarea" placeholder="Message" rows="5" name="Message" required=""></textarea>
               </div>
-              <button class="tapp-form-button tapp-hover" style="align-self: center; background-color: rgb(74, 173, 173); color: rgb(250, 252, 252);">Submit</button>
+            <button type="submit" value="Submit" id="submit" class="tapp-form-button tapp-hover" style="align-self: center; background-color: rgb(60, 150, 150); color: rgb(250, 252, 252);">Submit</button>
             </form>
           </div>
         </div>
     </div>
     </div>
-</div>
- 
-    
+</div> 
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzw5dbzQQPw7f04qm8tujUw3pGDeYZp6Qt8uI_8EYnH2l9RYt2eu1dGVmMzwXhxFDsL/exec';
+  let timeout;
+  const form = document.forms['contact-form'];
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    try {
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+      .then(response => response.json())
+      .then(response => {
+        alert("Thank you! Your form is submitted successfully.");
+        console.log(response);
+        const notification = document.getElementById("snackbar");
+        notification.classList.add("show");
+        clearTimeout(timeout);
+        timeout = setTimeout(() => notification.classList.remove("show"), 5000);
+      })
+      .catch(error => console.error('Error!', error.message));
+    } catch (error) {
+      console.error('Error in handling form submission!', error.message);
+    }
+  };
+
+  form.addEventListener('submit', handleSubmit);
+
+  function isFullyOutViewport(el, offset = 64) {
+    const rect = el.getBoundingClientRect();
+    return (
+      (rect.bottom < -offset) ||
+      (rect.top > ((window.innerHeight || document.documentElement.clientHeight) + offset))
+    );
+  }
+</script>
 </body>
 </html>
