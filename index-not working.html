@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="css/responsive_nav.css">
 <link rel="stylesheet" href="css/bootstrap_style.css">
 <link rel="stylesheet" href="css/popup_contact_styles.css">
+<link rel="stylesheet" href="css/addon_styles.css">
+
 <script src="js/contactform.js"></script>
 <script src="js/hamburger_nav.js"></script>
 
@@ -445,7 +447,7 @@
                     <div class="tapp-form-input-wrapper">
                       <input class="tapp-form-input" placeholder="Name alias" type="text" required="" name="your-name"></div>
                       <div class="tapp-form-input-wrapper">
-                      <input class="tapp-form-input" placeholder="Phone Number" type="text" pattern="([0-9])\w+|\+([0-9])\w+" required="" name="your-number"></div>
+                      <input class="tapp-form-input" id="your-number" placeholder="Phone Number" type="text" pattern="([0-9])\w+|\+([0-9])\w+" title="Please enter your phone number." required="" name="your-number"></div>
                       </div>
                    
                     <div class="tapp-form-row">
@@ -453,9 +455,13 @@
                       <input class="tapp-form-input" placeholder="Email" type="email" required="" name="your-email"></div>
                       </div>
                        <div class="tapp-form-input-wrapper">
-                    <textarea class="tapp-form-textarea" placeholder="Message" rows="5" name="message" required=""></textarea>
+                    <textarea class="tapp-form-textarea" placeholder="
+- Preferred date and time (e.g., 30-Aug-XX at 9:00 PM)
+- Your full address (e.g., Carlton Hotel Rm 1234, Main St, Singapore 62704)
+- Any special instructions or requests" 
+					rows="5" name="message" required="" style="line-height: 2rem;"></textarea>
                     </div>
-                    <button type="submit" id='submit' name='submit' class="tapp-form-button" style="border-radius: 8px; background-color: rgb(222, 228, 229); color: rgb(72, 117, 124); padding: 0px 32px; height: 48px; font-size: 18px;">Submit</button>
+                    <button type="submit" id='submitButton' name='submit' class="tapp-form-button">Submit</button>
                 </form>
         </div>
       </div>
@@ -489,6 +495,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
 <script src="js/social window.js"></script> 
+<script src="js/validity.js"></script> 
 
 </body>
 </html>

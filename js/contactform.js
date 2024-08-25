@@ -6,6 +6,9 @@ const form = document.forms['contact-form'];
 const handleSubmit = (event) => {
     // Prevent the default form submission
     event.preventDefault();
+    const submitButton = document.getElementById('submitButton');
+    submitButton.disabled = true;
+
 
     try {
         fetch(scriptURL, {
@@ -33,6 +36,7 @@ const handleSubmit = (event) => {
         notification.classList.add("show");
 
         // Hide the notification after 15 seconds and optionally reload the page
+	submitButton.disabled = false;
         clearTimeout(timeout);
         timeout = setTimeout(() => {
             notification.classList.remove("show");
