@@ -1,0 +1,14 @@
+{
+"name": "current-project",
+"version": "1.0.0",
+"description": "",
+"main": index.js,
+"scripts": {
+"build.css": "postcss src/zen_styles.css --dir dest"
+}
+ 
+  "devDependencies": {
+    "postcss": "^8.4.45",
+    "postcss-cli": "^11.0.0"
+  }
+}

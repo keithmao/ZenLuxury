@@ -1,19 +1,22 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzw5dbzQQPw7f04qm8tujUw3pGDeYZp6Qt8uI_8EYnH2l9RYt2eu1dGVmMzwXhxFDsL/exec';
 let timeout;
 
-const form = document.forms['contact-form'];
-
 const handleSubmit = (event) => {
     // Prevent the default form submission
     event.preventDefault();
+	const form = document.forms['contact-form'];
+	const formData = new FormData(form);
+
+	formData.append('your-company', 'Zen'); // First field
+	formData.append('recipient', 'zenluxurymassage@gmail.com'); // Second field
+	
     const submitButton = document.getElementById('submitButton');
     submitButton.disabled = true;
-
 
     try {
         fetch(scriptURL, {
                 method: 'POST',
-                body: new FormData(form)
+                body: formData,
             })
             .then(response => response.json())
             .then(response => {
@@ -44,6 +47,7 @@ const handleSubmit = (event) => {
         }, 15000);
     }
 }
+
 
 function isFullyOutViewport(el, offset = 64) {
     const rect = el.getBoundingClientRect();
@@ -80,7 +84,5 @@ function scrollHandler() {
     }
 }
 
-const throttledScrollHandler = _.throttle(scrollHandler, 99);
-window.addEventListener('scroll', throttledScrollHandler);
 document.addEventListener('DOMContentLoaded', () => {scrollHandler();});
 

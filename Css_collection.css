@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	border: #000000 thin;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	columns: 240px 2;
+	column-gap: 16px;
+	min-height: 460px;
+	padding: 16px;
+	color: #ffffff;
+	resize:both;
+	overflow: hidden;
+}

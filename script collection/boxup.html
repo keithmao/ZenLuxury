@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .overlay-box {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-image: url('your-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .overlay-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay color (black with 50% opacity) */
+            z-index: 1;
+        }
+
+        .overlay-content {
+            position: relative;
+            z-index: 2; /* Make sure the content is above the overlay */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay-box">
+        <div class="overlay-content">
+            <h2>Overlay Title</h2>
+            <p>This is the content inside the box with an overlay background.</p>
+        </div>
+    </div>
+
+</body>
+</html>

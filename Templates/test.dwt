@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<style>
+@import url("../css/zen_style.css");
+@import url("../css/bootstrap-4.4.1.css");
+* {
+    box-sizing: border-box;
+    border: solid 1px red;
+    margin: 0px;
+}
+    section{
+        word-break: break-all;
+        white-space: normal;
+        text-align: center;
+        
+    }
+    .table{
+        border: solid black 2px;
+        }
+    
+    
+</style>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+    <!--- NEXT ---->
+
+<section id="products">
+  <div class="row kk-easy-border" style="height=400px;">
+    <div class="col-md-4" style="">IMAGES</div>
+      <div class="col">
+          <div class="col-md" style="height:80px;"><h3>HEADING</h3></div>
+          <div class="col-md" style="height:200px;"><p>CONTENT</p></div>
+  
+    <table id="pricelist-table" class="table table-striped center-all-content" style="width: 90%;">                                          
+      <thead>
+        <tr class="table-header">
+          <th scope="col"></th>
+          <th scope="col">60 min</th>
+          <th scope="col">90 min</th>
+          <th scope="col">120 min</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-content">
+          <th scope="row">Traditional Thai Massage</th>
+          <td class="border">$200</td>
+          <td class="border">$300</td>
+          <td class="border">$400</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+      </div>
+</section>
+</body>
+</html>
