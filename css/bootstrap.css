@@ -1686,6 +1686,7 @@ pre code {
 
 .table {
   width: 100%;
+    overflow: auyo;
   margin-bottom: 1rem;
   color: #212529;
 }
@@ -10240,4 +10241,8 @@ a.text-dark:hover, a.text-dark:focus {
 .flex {
     display: grid;
     align-self: center;
+}
+
+#Booking-Cancellation {
+    background-color: aliceblue;
 }

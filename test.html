@@ -9,32 +9,39 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/slide-in-box.css">
 <link rel="stylesheet" href="css/responsive_nav.css">
 <link href="css/zen_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-dark-grey.css">
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+ 
+.red-hat-display-normal {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 * {
     box-sizing: border-box;
-    border: solid red 1px;
     margin: 0px;
     padding: 0px;
-            font-family: Helvetica, sans-serif;
+    font-family: Helvetica, "Questrial", sans-serif;;
 
     
 }
     html,
       body {
         height: 100%;
-      }
-    
-body {
-    /*background: linear-gradient(to right, rgba(207,204,203,0.10), #423535);*/
-    background-color: rgba(63,52,53,0.22);
-    font-size: 16px; /*1.1rem;*/
+          background-color: #ffffff;
+          font-size: 16px; /*1.1rem;*/
     font-family: "Questrial", sans-serif;
     font-weight: 500;
     font-style: normal;
-}
+      }
+    
 section {
     word-break: break-all;
     white-space: normal;
@@ -133,31 +140,78 @@ th.table-header {
   </div>
 </header>
 <!---<h2 class="text-white text-capitalize card-img-overlay word-style-pre" style="font-weight: 700; font-size: 40px;left: 50px; top: 150px;">Tailor based on your needs</h2>--->
-  <div class="wrapper" styffle="height: 300px;">
-      <div class="fixed img-fluid" style="background-image: url('images/display_pic.png')"></div>  
+  <div class="wrapper" style="height: 50vh;">
+      <div class="img-fluid service-page-display" style="background-image: url('images/display_pic.png')"></div>  
 </div>
 
 
 <!--- First Section ---->
-<span class="page-title">Our Services</span>
-<div class="container-box mt-5"> 
-  <div class="row" style="align-items: center;">
-    <div class="col-md-4">
-        
+
+<!--- NEXT ---->
+<div class="container-box come-in w"> 
+  <div class="row" style="min-height:400px; align-items: center;">
+     <div class="page-title red-hat-display-normal">Our Services</div>
+      <!--- LEFT COLUMN --->
+      
+      <div class="col-md-4">
        <div class="image-box">      
-            <div class="fixed img-fluid" style="background-image: url('/images/services_option3.jpg');">
-</div>
-        </div>
- <!---<div class="fixed-test" style="height: 350px; background-image: url('images/services_option3.jpg');"></div> --->
-   
+            <div class="fixed-test" style="background-image: url('images/services_option2.jpg')"></div>
+        </div>   
     </div>
+      
+      <!--- RIGHT COLUMN---->  
+      
+    <div class="col-md-8">
+        <div class="col-md">
+          <h3 class="kk-heading">Thai Oil Massage</h3>
+          <p class="kk-content">The primary aim of Thai massage is to balance the body's energy, alleviate muscle tension, and improve flexibility. By focusing on the energy lines, the massage helps in the release of blockages and promotes a harmonious flow of energy throughout the body. This not only helps in relieving physical discomfort but also fosters mental relaxation and emotional balance.</p>
+          <div class="col-md">
+            <table class="text-center table-shadow table table-striped center-all-content my-3" style="width: 80%;">
+              <thead>
+                <tr>
+                  <th class="table-header" scope="col">Package&nbsp;</th>
+                  <th class="table-header" scope="col">60min</th>
+                  <th class="table-header" scope="col">90min</th>
+                  <th class="table-header" scope="col">120min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-content">
+                  <th scope="row">Traditional Thai Massage</th>
+                  <td class="border">$200</td>
+                  <td class="border">$300</td>
+                  <td class="border">$400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+     
+    </div>
+  </div>
+</div>
+        
+<!--- NEXT ---->
+<div class="container-box come-in"> 
+  <div class="row bg-white-tint" style="min-height: 350px; align-items: center;">
+    
+      <!--- LEFT COLUMN --->
+      
+      <div class="col-md-4">
+       <div class="image-box">      
+            <div class="fixed-test" style="background-image: url('images/services_option2.jpg')"></div>
+        </div>   
+    </div>
+      
+      <!--- RIGHT COLUMN---->
+      
     <div class="col-md-8">
       <div class="row">
         <div class="col-md">
           <h3 class="kk-heading">Thai Oil Massage</h3>
           <p class="kk-content">The primary aim of Thai massage is to balance the body's energy, alleviate muscle tension, and improve flexibility. By focusing on the energy lines, the massage helps in the release of blockages and promotes a harmonious flow of energy throughout the body. This not only helps in relieving physical discomfort but also fosters mental relaxation and emotional balance.</p>
           <div class="col-md">
-            <table class="text-center table-shadow table table-striped center-all-content my-3 come-in" style="width: 80%;">
+            <table class="text-center table-shadow table table-striped center-all-content my-3" style="width: 80%;">
               <thead>
                 <tr>
                   <th class="table-header" scope="col">Package&nbsp;</th>
@@ -181,13 +235,56 @@ th.table-header {
     </div>
   </div>
 </div>
-
+        
 <!--- NEXT ---->
-
-<br/>
+<div class="container-box come-in"> 
+  <div class="row" style="align-items: center;">
+    
+      <!--- LEFT COLUMN --->
+      
+      <div class="col-md-4">
+       <div class="image-box">      
+            <div class="fixed-test" style="background-image: url('images/services_option2.jpg')"></div>
+        </div>   
+    </div>
+      
+      <!--- RIGHT COLUMN---->
+      
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md">
+          <h3 class="kk-heading">Thai Oil Massage</h3>
+          <p class="kk-content">The primary aim of Thai massage is to balance the body's energy, alleviate muscle tension, and improve flexibility. By focusing on the energy lines, the massage helps in the release of blockages and promotes a harmonious flow of energy throughout the body. This not only helps in relieving physical discomfort but also fosters mental relaxation and emotional balance.</p>
+          <div class="col-md">
+            <table class="text-center table-shadow table table-striped center-all-content my-3" style="width: 80%;">
+              <thead>
+                <tr>
+                  <th class="table-header" scope="col">Package&nbsp;</th>
+                  <th class="table-header" scope="col">60min</th>
+                  <th class="table-header" scope="col">90min</th>
+                  <th class="table-header" scope="col">120min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-content">
+                  <th scope="row">Traditional Thai Massage</th>
+                  <td class="border">$200</td>
+                  <td class="border">$300</td>
+                  <td class="border">$400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <br/>
         </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/slide-in-box.js"></script>
+    <script src="js/slide-in-box.js"></script>
+    <script src="js/scrolling.js"></script>
 <script src="js/test.js"></script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parallax {
+            background-image: url('images/masseuse1.png');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: 10% 20%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+@media all and (max-width:1024px) {
+    .parallax:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url('images/masseuse1.png');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: 10% 20%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        -moz-animation: none;
+     -webkit-animation: none;
+     -ms-animation: none;
+     animation: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div style="height:1000px;">
+        <h1>Scroll down to see the effect</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes tapp-zoom-in {
+    0% {
+      transform: scale(0.9) translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+html {
+    --tapp-theme-primary: #62696e;
+    --tapp-theme-secondary: #173C54;
+    --tapp-theme-tertiary: #FFFFFF;
+    --tapp-theme-quaternary: #F8F6EE;
+    --tapp-theme-quinary: #BFE3FF;
+    --tapp-theme-font: Poppins;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background-color: var(--tapp-theme-primary, #fff);
+    font-family: var(--tapp-theme-font);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tapp-section-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 48px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s; /* transition effect */
+}
+
+.tapp-section-content.in-view {
+    animation: tapp-zoom-in 0.5s forwards;
+}
+
+/* Form Block */
+
+.tapp-form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  gap: 16px;
+}
+
+.tapp-form-input-wrapper {
+  position: relative;
+  border-radius: 6px;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid rgb(0 0 0 / 15%);
+}
+
+.tapp-form-input-wrapper:focus-within {
+  border-color: var(--input-border-color, #52C3FB);
+  outline: 4px solid var(--input-outline-color, rgb(166	224	252 / 25%));
+}
+
+.tapp-form-input-wrapper::before {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: var(--input-background-color);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.tapp-form-input, .tapp-form-textarea {
+  background: none;
+  font: inherit;
+  width: 100%;
+  border: none;
+  color: inherit;
+}
+
+.tapp-form-input:focus-visible, .tapp-form-textarea:focus-visible {
+  outline: none;
+}
+
+.tapp-form-textarea {
+  padding: 16px;
+}
+
+.tapp-form-input {
+  padding: 0 16px;
+  height: 56px;
+}
+
+.tapp-form-button {
+  width: fit-content;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0 24px;
+  display: flex;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html {
+   scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background-color: var(--tapp-theme-primary, #fff);
+    font-family: var(--tapp-theme-font);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tapp-form-input:focus-visible, .tapp-form-textarea:focus-visible {
+  outline: none;
+}
+
+ .center-all-content{
+    width: 100%;
+    /* Change this value to customize the content area*/
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto;   
+    width: auto;
+    padding: 30px;
+}
+
+.tapp-section-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 48px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s; /* transition effect */
+        animation: tapp-zoom-in 0.5s forwards;
+}
+
+
+/* Fixed background for tablet and mobile */
+
+.content-bg {
+    background-color: white;
+    background-blend-mode: multiply;
+    width: 100%;
+    border-radius: 5px;    
+    padding:25px;
+}
+
+.contact-section {
+    display: grid;
+    margin: 0 auto;
+    background-color: #3A392E;
+    font-size: 16px;
+    padding: 40px 0px;
+    
+}
+
+
+.button-wrapper {
+    display:flex;
+    margin: 0px auto;
+    justify-content: center;
+    font-size: 16px;
+}
+

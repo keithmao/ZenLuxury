@@ -127,10 +127,7 @@
 }
 .playfair-display-strong {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
-  letter-spacing: 1px;
 }
 
 .playfair-display-regular {
@@ -221,3 +218,4 @@
   font-weight: 900;
   font-style: italic;
 }
+

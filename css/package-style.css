@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+body {
+    font-family: "Century Gothic", "Lato", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+.et-hero-tabs, .et-slide {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 95vh;
+    position: relative;
+    /*background: #eee;*/
+    text-align: center;
+    padding: 3em 2em 1em 2em;
+}
+.et-hero-tabs h1, .et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+.et-hero-tabs h3, .et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+.et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+}
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 0.9rem;
+}
+.et-hero-tab:hover {
+    color: white;
+    background: rgba(102, 177, 241, 0.8);
+    transition: all 0.5s ease;
+}
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+.et-hero-tabs h1, .et-slide h1 {
+    font-size: 3rem;
+}
+.et-hero-tabs h3, .et-slide h3 {
+    font-size: 1rem;
+}
+.et-hero-tab {
+    font-size: 1rem;
+}
+}
+.display-bg-setting {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bg-wallpaper {
+    /*added*/
+    height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    color: rgb(255, 255, 255); 
+    --tapp-section-background-opacity: 0.5;
+    }
+}
+
+#traditional-massage,#oil-massage,#swedish-massage,#aroma-massage,#prostate-care {
+    width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+    
+
+.test {
+    display: block;
+    float: left;
+    background-image: url("../images/img (4).jpg");
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.test-wrapper {
+    display: grid;
+}
+
+.tab-oil-massage {
+    height: 100vh; 
+    width: 100%;
+}
+
+.tab-oil-massage-bg {
+    background-image:url('../images/display_pic.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 80%; 
+    height: 90%;
+}
+
+.content-box {
+    position: absolute;
+    width: 40%; 
+    height: 70%;
+    background-color:whitesmoke;
+    right: 5%;
+    bottom: 12%;
+}
+
+.img-wrapper {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/display_pic.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.home {
+    font-size: 18px;
+    text-decoration: none;
+    
+    color:white;
+    padding-left:10px;
+    overflow: hidden;
+}
+
+#pricetable2 {
+     position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.box-content1 { 
+    background-repeat: no-repeat;
+    background-image: url(../images/services_option2.jpg);
+    background-size: cover;
+    background-position: 10% 30%;
+    
+    
+}
+
+.box-content2 {
+    background-repeat: no-repeat;
+    background-image: url("../images/services_option5.jpg");
+    background-size: cover;   
+}
+
+.box-content3 {
+    background-repeat: no-repeat;
+    background-image: url("../images/services_option3.jpg");
+    background-size: cover; 
+    background-position: 50%;
+}
+
+.box-content4 {
+    background-repeat: no-repeat;
+    background-image: url("../images/img (6).jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+.box-content5 {
+    background-repeat: no-repeat;
+    background-image: url("../images/img (4).jpg");
+    background-size: cover; 
+}
+
+.box-content6 {
+    background-repeat: no-repeat;
+    background-image: url("../images/services_option1.jpg");
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+ .center-all-content{
+    width: 100%;
+    /* Change this value to customize the content area*/
+    margin: 0 auto;
+}
+
+.bg-tinted {
+    background-color: rgba(0,0,0, 0.6);
+    background-blend-mode: multiply;
+}
+
+.tapp-nav {
+    overflow: hidden;
+    /*-webkit-backdrop-filter: saturate(80%) blur(20px);*/
+	/*backdrop-filter: saturate(80%) blur(20px);*/
+    padding: 0 24px;
+    display: flex;
+	flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tapp-nav-wrapper {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 978px) {
+    .container, .container-fluid, .row, .et-slide, .table, .tr, .td, .p{
+      padding:0px;
+      margin:0px;
+        font-size: 15px;
+    }
+
+    
+    body {
+      padding:0px;
+        
+    }
+
+    .nav {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+.tapp-button {
+    font-family:"source-sans-pro";
+    background-color: rgba(12,80,219,0.89)!important; 
+	color: #fff!important;
+	border-color: rgba(255, 255, 255, 0.1)!important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 10px 20px !important;
+}
+
+.tapp-button:hover {
+    background-color: rgba(7,50,137,1.00)!important; 
+	color: #E7E6E6!important;
+	color: silver !important;
+    transform: scale(1.05);
+}
+
+.letter-spacing {
+    letter-spacing:0.5px;
+}
+
+.brandname {
+    font-family: "Playfair Display", serif;
+      font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    word-wrap: break-word;
+    
+}

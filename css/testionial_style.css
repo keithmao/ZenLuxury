@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+/* Form Block */
+
+@keyframes tapp-zoom-in {
+    0% {
+      transform: scale(0.9) translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+}
+
+
+.tapp-form-input:focus-visible, .tapp-form-textarea:focus-visible {
+  outline: none;
+}
+
+html {
+   scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background-color: var(--tapp-theme-primary, #fff);
+    font-family: var(--tapp-theme-font);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tapp-form-input:focus-visible, .tapp-form-textarea:focus-visible {
+  outline: none;
+}
+
+.page-title {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto;   
+    width: auto;
+    padding: 30px;
+}
+
+.tapp-section-content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 48px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s; /* transition effect */
+        animation: tapp-zoom-in 0.5s forwards;
+}
+
+
+.tapp-section-content.in-view {
+    animation: tapp-zoom-in 0.5s forwards;
+}
+
+.row {
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+/* Fixed background for tablet and mobile */
+
+#testimonial {
+    background-color: #faf9f9;
+        /*background-image: url("../images/pexels-photo-4021870.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+}
+
+.testimonial-content {
+    font-size: 1em;
+    letter-spacing: 0.25px;
+    flex-wrap: wrap;
+    line-height: 25px;
+    text-align: left;
+    
+    
+}
+
+.testimonial-author {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: right;
+}
+
+.content-bg {
+    background-color: white;
+    background-blend-mode: multiply;
+    width: 100%;
+    border-radius: 5px;    
+    padding:25px;
+}
+
+.container-testimonial {
+    margin: 0 20px;
+    padding: 70px;
+    
+}
+
+
