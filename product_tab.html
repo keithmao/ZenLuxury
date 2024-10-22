@@ -52,9 +52,9 @@ h2 {
 }
 .box {
     padding: 8px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: inline-block;
-    width: 90%;
+    width: 350px;
     height: 250px;
     border-radius: 8px;
     box-shadow: 0 5px 10px 0px rgba(0,0,0,0.22), 0 10px 13px 0px rgba(0,0,0,0.34), inset 0 -18px 18px 0 rgba(0,0,0,0.10);
@@ -78,6 +78,16 @@ h2 {
     overflow: auto;
 }
 
+    .box-behind {
+        
+    padding: 8px;
+    margin-top: 20px;
+        width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.22), 0 10px 13px 0px rgba(0,0,0,0.34), inset 0 -18px 18px 0 rgba(0,0,0,0.10);
+}
+    
 @media (max-width: 1024px) {
 .pricetable1, .pricetable2 {
     right: 0;
@@ -119,36 +129,58 @@ h2 {
 </header>
 <!-- Hero -->
 <section class="et-hero-tabs text-white bg-wallpaper bg-tinted">
+    <div class="brandname flex text-wrap text-center m-2 position-relative" style="top:18%;"><h1>Premier Outcall Massage</h1></div>
+    <div class="flex text-wrap text-center m-2 position-relative" style="top:20%; width: 650px;">
+    <h3 style="line-height: 25px;">Massage enhance ciculation &amp; promote relaxation, benefiting overall bodily health</h3>
+    </div>
+    <div class="tapp-button-wrapper p-3 position-relative" style="top: 26%;"><a class="tapp-button-link" href="https://api.whatsapp.com/message/DCZL7GX7P53CI1?autoload=1&amp;app_absent=0" target="_blank">
+          <button type="button" class="btn btn-primary tapp-button tapp-hover bg-tinted" style="box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;">Book Now</button>
+          </a></div>
     
-  <div class="container-fluid text-center" style="margin-top: 60px;">
-    <div class="row">
-        <div class="offset-2 col-8 offset-2">
-          <div class="brandname playfair-display-strong text-wrap text-center mt-5">Premier Outcall Massage</div>
-        </div>
-        <div class="col-12 p-3"><h3>unforgettable sensation</h3></div>
-        <div class="offset-4 col-4 offset-4">
-            <div class="tapp-button-wrapper my-3 p-3"><a class="tapp-button-link" href="https://api.whatsapp.com/message/DCZL7GX7P53CI1?autoload=1&amp;app_absent=0" target="_blank">
-    <button type="button" class="btn btn-primary tapp-button tapp-hover bg-tinted" style="box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;">Book Now</button>
-    </a></div>          
-  </div>
-    <div class="col-12"><p class="playfair-display-lighter p-1">Make an appointment with us now</p>
-  <p class="playfair-display-lighter offset-lg-2 col-lg-8">Operating hour: 7am - 3am daily&nbsp;(SGT time)</p>
-      <div class="letter-spacing">
-      <small>*Please make an appointment at least 1 hour in advance</small><br/>
-      <small>*Portable massage bed is available upon request.</small>
-        </div>
-        </div>
-    </div>
-    </div>
-   
-<!--- section nav --->
+    <div class="playfair-display-lighter position-relative" style="top: 30%;">
+    <span>Make an appointment with us now</span>
+        <br/>
+        <span>Operating hour: 7am - 3am daily (SGT time)</span></div>
+        <div class="letter-spacing text-center text-nowrap position-relative" style="top: 35%; "> <small>*Please make an appointment at least 1 hour in advance</small><br/>
+          <small>*Portable massage bed is available upon request.</small> </div>
+    
+    
+    
+    
+  </section>
+  <!--- section nav --->
   <div class="et-hero-tabs-container text-center"> <a class="et-hero-tab" href="#traditional-massage">Thai Tradtional Massage</a> <a class="et-hero-tab" href="#oil-massage">Oil Massage</a> <a class="et-hero-tab" href="#swedish-massage">Swedish Massage</a> <a class="et-hero-tab" href="#aroma-massage">Aroma Massage</a> <a class="et-hero-tab" href="#prostate-care">Prostate Care Treatment</a> <span class="et-hero-tab-slider"></span> </div>
-    </section> 
+
 
 <!-- Main -->
 <main class="et-main">
   <section class="et-slide" id="traditional-massage">
-    <div class="box box-content1"></div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-5 media-wrapper box-content1"></div>
+          <div class="col-sm-7"><h2 class="pt-3">Thai Tradtional Massage</h2><p class="text-left pt-1" style="word-spacing: 0.5px"> Immerse yourself in the therapeutic richness of Thai Traditional Massage, where the essence of tradition meets the serenity of the present moment.</p></div>
+            <div class="col-sm-12"><table id="pricetable1" class="container table table-striped center-all-content tab">
+            <thead>
+              <tr>
+                <th class="table-header text-nowrap" scope="col">Packages</th>
+                <th class="table-header text-nowrap" scope="col">60 min</th>
+                <th class="table-header text-nowrap" scope="col">90 min</th>
+                <th class="table-header text-nowrap" scope="col">120 min</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="table-content" scope="row">Traditional Thai Massage</th>
+                <td class="table-content border">$200</td>
+                <td class="table-content border">$300</td>
+                <td class="table-content border">$400</td>
+              </tr>
+            </tbody>
+          </table>
+          </div></div></div>
+      
+      <div class="box-content1" style="width: 400px; height: 300px;"></div>
+      <div class="box-behind box-content1 bg-tinted" style="background-color: rgba(0,0,0, 0.3); background-blend-mode: exclusion;"></div>
     <div class="container-fluid questrial-regular">
       <div class="row">
         <div class="col-md-12 p-2 pt-3">
@@ -156,7 +188,7 @@ h2 {
           <div class="col-md-12">
             <p style="word-spacing: 0.5px; padding: 0px 8px;"> Immerse yourself in the therapeutic richness of Thai Traditional Massage, where the essence of tradition meets the serenity of the present moment.</p>
           </div>
-          <table id="pricetable1" class="container table table-striped center-all-content">
+          <table id="pricetable1" class="container table table-striped center-all-content tab">
             <thead>
               <tr>
                 <th class="table-header text-nowrap" scope="col">Packages</th>
@@ -187,24 +219,67 @@ h2 {
           <div class="col-md-12">
             <p style="word-spacing: 0.5px; padding: 0px 8px;"> Thai oil massage combines traditional Thai massage techniques with the application of soothing oils. It improves circulation, relieves muscle tension, enhances flexibility, and promotes relaxation, offering a holistic experience for both body and mind.</p>
           </div>
-          <table id="pricetable2" class="container table table-striped center-all-content">
-            <thead>
-              <tr>
-                <th class="table-header text-nowrap" scope="col">Packages</th>
-                <th class="table-header text-nowrap" scope="col">60 min</th>
-                <th class="table-header text-nowrap" scope="col">90 min</th>
-                <th class="table-header text-nowrap" scope="col">120 min</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="table-content" scope="row">Traditional Thai Massage</th>
-                <td class="table-content border">$200</td>
-                <td class="table-content border">$300</td>
-                <td class="table-content border">$400</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="col-md-12">
+            
+            <div class="table-responsive">
+              <table class="text-left justify-content-center" style="font-size: 0.9rem;">
+                <tr>
+                  <td style="padding-right: 8px;">Relaxation</td>
+                  <td>Aromatic oils and gentle strokes ease physical and mental stress </td>
+                </tr>
+               <tr>
+                  <td style="padding-right: 8px;">Circulation</td>
+                  <td>Enhances blood flow and reduces muscle soreness. </td>
+                </tr><tr>
+                  <td style="padding-right: 8px;">Skin Health</td>
+                  <td>Essential oils nourish and hydrate the skin. </td>
+                </tr>
+                  <tr>
+                  <td style="padding-right: 8px;">Stress Relief</td>
+                  <td>Combines soothing aromas and touch for comprehensive stress relief. </td>
+                </tr>
+              </table>
+            </div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+          <section>
+            <table id="pricetable2" class="container table table-striped center-all-content">
+              <thead>
+                <tr>
+                  <th class="table-header text-nowrap" scope="col">Packages</th>
+                  <th class="table-header text-nowrap" scope="col">60 min</th>
+                  <th class="table-header text-nowrap" scope="col">90 min</th>
+                  <th class="table-header text-nowrap" scope="col">120 min</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="table-content" scope="row">Traditional Thai Massage</th>
+                  <td class="table-content border">$200</td>
+                  <td class="table-content border">$300</td>
+                  <td class="table-content border">$400</td>
+                </tr>
+                <tr>
+                  <td style="padding-right: 8px;">Relaxation</td>
+                  <td colspan="3">Aromatic oils and gentle strokes ease physical and mental stress </td>
+                </tr>
+               <tr>
+                  <td style="padding-right: 8px;">Circulation</td>
+                <td colspan="3">Enhances blood flow and reduces muscle soreness. </td>
+                </tr><tr>
+                  <td style="padding-right: 8px;">Skin Health</td>
+                <td colspan="3">Essential oils nourish and hydrate the skin. </td>
+                </tr>
+                  <tr>
+                  <td style="padding-right: 8px;">Stress Relief</td>
+               <td colspan="3">Combines soothing aromas and touch for comprehensive stress relief. </td>
+                </tr>
+          
+              </tbody>
+            </table>
+          </section>
         </div>
       </div>
     </div>
@@ -304,84 +379,7 @@ h2 {
   </section>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<script src="sticky.js"></script> 
-<script>
-  class StickyNavigation {
-  
-  constructor() {
-    this.currentId = null;
-    this.currentTab = null;
-    this.tabContainerHeight = 70;
-    let self = this;
-    $('.et-hero-tab').click(function() { 
-      self.onTabClick(event, $(this)); 
-    });
-    $(window).scroll(() => { this.onScroll(); });
-    $(window).resize(() => { this.onResize(); });
-  }
-  
-  onTabClick(event, element) {
-    event.preventDefault();
-    let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-    $('html, body').animate({ scrollTop: scrollTop }, 600);
-  }
-  
-  onScroll() {
-    this.checkTabContainerPosition();
-    this.findCurrentTabSelector();
-  }
-  
-  onResize() {
-    if(this.currentId) {
-      this.setSliderCss();
-    }
-  }
-  
-  checkTabContainerPosition() {
-    let offset = $('.et-hero-tabs').offset().top + $('.et-hero-tabs').height() - this.tabContainerHeight;
-    if($(window).scrollTop() > offset) {
-      $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
-    } 
-    else {
-      $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
-    }
-  }
-  
-  findCurrentTabSelector(element) {
-    let newCurrentId;
-    let newCurrentTab;
-    let self = this;
-    $('.et-hero-tab').each(function() {
-      let id = $(this).attr('href');
-      let offsetTop = $(id).offset().top - self.tabContainerHeight;
-      let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
-      if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
-        newCurrentId = id;
-        newCurrentTab = $(this);
-      }
-    });
-    if(this.currentId != newCurrentId || this.currentId === null) {
-      this.currentId = newCurrentId;
-      this.currentTab = newCurrentTab;
-      this.setSliderCss();
-    }
-  }
-  
-  setSliderCss() {
-    let width = 0;
-    let left = 0;
-    if(this.currentTab) {
-      width = this.currentTab.css('width');
-      left = this.currentTab.offset().left;
-    }
-    $('.et-hero-tab-slider').css('width', width);
-    $('.et-hero-tab-slider').css('left', left);
-  }
-  
-}
-
-new StickyNavigation();
-</script> 
+<script src="js/sticky.js"></script> 
 <script src="js/hamburger_nav.js"></script>
 </body>
 </html>
